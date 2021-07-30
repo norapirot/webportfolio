@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>イラストレーション作品</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="illustrationcss.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+
+<body>
+	
+	<div id="loading" class="hidden">
+		<img src="gazou/nora05.gif" width="88" height="88" alt="loading">
+	</div>
+	
+	
+	<div class="topbuttonbody">
+		<a href="index.html">
+			<div class="topbutton">
+				<p class="pworks">MY WORKSへ</p>
+			</div>
+		</a>
+	</div>
+	
+	
+	<img class="illustration" src="gazou/illustrator.png" alt="illustration">
+	
+
+	<ul class="slider">
+		<li><img class="i02" src="gazou/pop1.png" alt=""></li>
+		<li><img class="i01" src="gazou/i01.jpg" alt=""><p class="slidermoji">製作年:2021年 製作時間:12時間</p></li>
+		<li><img src="gazou/i02.png" alt=""><p class="slidermoji">製作年:2021年 製作時間:3時間</p></li>
+		<li><img src="gazou/i03.png" alt=""><p class="slidermoji">製作年:2021年 製作時間:3時間</p></li>
+		<li><img src="gazou/i04.png" alt=""><p class="slidermoji">製作年:2021年 製作時間:3時間</p></li>
+		<li><img src="gazou/i05.png" alt=""><p class="slidermoji">製作年:2021年 製作時間:3時間</p></li>
+		<li><img class="i01" src="gazou/i06.png" alt=""><p class="slidermoji">製作年:2021年 製作時間:5時間</p></li>
+		<li><img class="i01" src="gazou/i07.png" alt=""><p class="slidermoji">製作年:2021年 製作時間:5時間</p></li>
+		<li><img class="i02" src="gazou/pop2.png" alt=""></li>
+		<li><img class="i01" src="gazou/i08.jpg" alt=""><p class="slidermoji">製作年:2021年 製作時間:2時間</p></li>
+		<li><img class="i01" src="gazou/i09.jpg" alt=""><p class="slidermoji">製作年:2021年 製作時間:2時間</p></li>
+		<li><img class="i01" src="gazou/i10.jpg" alt=""><p class="slidermoji">製作年:2021年 製作時間:2時間</p></li>
+		<li><img class="i01" src="gazou/i11.jpg" alt=""><p class="slidermoji">製作年:2021年 製作時間:2時間</p></li>
+		<li><img class="i01" src="gazou/i12.jpg" alt=""><p class="slidermoji">製作年:2021年 製作時間:2時間</p></li>
+		<li><img class="i02" src="gazou/pop3.png" alt=""></li>
+		<li><img class="i01" src="gazou/i13.jpg" alt=""><p class="slidermoji">製作年:2021年 製作時間:10時間</p></li>
+		<li><img class="i01" src="gazou/i14.jpg" alt=""><p class="slidermoji">製作年:2021年 製作時間:5時間</p></li>
+		<li><img src="gazou/i15.jpg" alt=""><p class="slidermoji">製作年:2021年 製作時間:5時間</p></li>
+		<li><img class="i01" src="gazou/i16.jpg" alt=""><p class="slidermoji">製作年:2021年 製作時間:6時間</p></li>
+	<!--/slider--></ul>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
+	<script>
+		
+		$('.slider').slick({
+		autoplay: true,//自動的に動き出すか。初期値はfalse。
+		infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+		speed: 500,//スライドのスピード。初期値は300。
+		slidesToShow: 3,//スライドを画面に3枚見せる
+		slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+		prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+		nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+		centerMode: true,//要素を中央ぞろえにする
+		variableWidth: true,//幅の違う画像の高さを揃えて表示
+		dots: true,//下部ドットナビゲーションの表示
+	});
+		
+			
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	<script type="text/javascript" src="techAcademy.js">
+
+		//---ローディング画像（表示）
+			document.getElementById('loading').classList.remove('hidden');
+		//---ローディング画像（非表示）
+			document.getElementById('loading').className = 'hidden';
+		
+		
+		
+		
+		
+		
+	</script>
+		
+		
+	
+
+</body>
+
+	
+	
+	
+	
+
+</html>

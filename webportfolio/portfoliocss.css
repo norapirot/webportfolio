@@ -1,0 +1,458 @@
+@charset "UTF-8";
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+
+#loading img {
+	position: fixed;
+	top: 45%;
+	left: 45%;
+	opacity: 0.5;
+	z-index: 9999;
+}
+.hidden {
+	display: none;
+}
+
+
+body{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-color: #161B30;
+}
+
+
+
+.wrapper{
+	width: 100vw;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-flow: column;
+}
+
+
+
+.samune{
+	position: relative;
+	width: 100vw;
+	min-width: 100%;
+	height: 71vw;
+	background-image: url("gazou/samune.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	text-align: center;
+}
+
+
+
+
+.neko{
+	position: absolute;
+	margin: auto;
+	top: 12%;
+	left: 28%;
+	width: 40%;
+	height: auto;
+	cursor: url('gazou/megahon.png'), pointer;
+	
+}
+
+
+
+
+
+
+.myworks{
+	position: absolute;
+	left: 25%;
+	width: 50%;
+	height: auto;
+	z-index: 9999;
+}
+
+
+.madiab1, .madiab2, .madiab3, .hand2{
+	display: none;
+}
+
+
+
+	.hand{
+		position: absolute;
+		margin: auto;
+		top: 20%;
+		left: 20%;
+		width: 10%;
+		height: auto;
+	}
+
+
+.b1{
+	position: relative;
+	width: 20%;
+	height: auto;
+	margin: 0 auto;
+	top: 12%;
+	right: 35%;
+	display: block;
+	cursor: pointer;
+  -webkit-transition: .6s cubic-bezier(0.34, 1.56, 0.64, 1);
+	transition: .6s cubic-bezier(1.34, 1.56, 0.64, 1);
+}
+.b1 img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+  display: block;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+.b1:hover {
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.b1:hover img:nth-of-type(2) {
+  opacity: 0;
+}
+
+
+
+
+.b2{
+	position: relative;
+	width: 17%;
+	height: auto;
+	margin: 0 auto;
+	top: 8%;
+	left: 35%;
+	display: block;
+	cursor: pointer;
+  -webkit-transition: .6s cubic-bezier(0.34, 1.56, 0.64, 1);
+	transition: .6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+
+
+.b2 img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+  display: block;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+.b2:hover {
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.b2:hover img:nth-of-type(2) {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+.b3{
+	position: relative;
+	width: 18%;
+	height: auto;
+	margin: 0 auto;
+	top: 35%;
+	left: 32%;
+	display: block;
+	cursor: pointer;
+  -webkit-transition: .6s cubic-bezier(0.34, 1.56, 0.64, 1);
+	transition: .6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.b3 img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+  display: block;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+.b3:hover {
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.b3:hover img:nth-of-type(2) {
+  opacity: 0;
+}
+
+
+.text{
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	top: 77%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+	color: #F0F7EC;
+	text-shadow: 0 0 2px #F0F7EC;
+	display: inline-block;
+	vertical-align: middle;
+	line-height:normal;
+}
+h1{
+	font-size: 2vw;
+	line-height: 0.8;
+}
+
+h2{
+	font-size: 1vw;
+	line-height: 1.2;
+}
+
+h3{
+	font-size: 0.8vw;
+	line-height: 2.5;
+}
+
+
+
+
+
+.icon{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.icon1,.icon2,.icon3{
+	width: 4%;
+	height: auto;
+	margin: 1%;
+}
+
+
+
+
+
+@media (max-width: 900px){
+	
+	
+	
+	
+#loading img {
+	position: fixed;
+	top: 45%;
+	left: 45%;
+	opacity: 0.5;
+	z-index: 9999;
+}
+.hidden {
+	display: none;
+}
+
+	
+	
+	
+	.samune{
+		position: relative;
+		width: 100vw;
+		min-width: 100%;
+		height: 240vw;
+		background-image: url("gazou/samunephone.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: top center;
+		text-align: center;
+	}
+	
+	
+	.myworks{
+		position: absolute;
+		left: 11%;
+		width: 80%;
+		height: auto;
+	}
+	
+	
+	
+	
+	.neko{
+		position: absolute;
+		top: 6%;
+		left: 10%;
+		width: 80%;
+		height: auto;
+	}
+	
+	
+	.hand2{
+		position: absolute;
+		margin: auto;
+		top: 32%;
+		left: 80%;
+		width: 6%;
+		height: auto;
+		display: block;
+	}
+	.hand2 img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	
+	.b1, .b2, .b3, .hand{
+		display: none;
+	}
+	
+	.madiab1{
+		position: relative;
+		width: 35%;
+		height: auto;
+		margin: 0 auto;
+		top: 67%;
+		right: 25%;
+		display: block;
+		cursor: pointer;
+
+	}
+	
+	.madiab1 img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	
+	.madiab2{
+		position: relative;
+		width: 35%;
+		height: auto;
+		margin: 0 auto;
+		top: 70%;
+		left: 25%;
+		display: block;
+		cursor: pointer;
+
+	}
+	
+	.madiab2 img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	
+	.madiab3{
+		position: relative;
+		width: 35%;
+		height: auto;
+		margin: 0 auto;
+		top: 82%;
+		right: 10%;
+		display: block;
+		cursor: pointer;
+
+	}
+	
+	.madiab3 img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	
+	
+	
+	
+
+.text{
+		position: absolute;
+		text-align: center;
+		margin: 0 auto;
+		top: 48%;
+		left: 50%;
+		width: 70%;
+		transform: translateY(-50%) translateX(-50%);
+		font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+		color: #F0F7EC;
+		text-shadow: 0 0 2px #F0F7EC;
+		display: inline-block;
+		vertical-align: middle;
+		line-height:normal;
+}
+h1{
+	font-size: 5vw;
+	line-height: 1;
+}
+
+h2{
+	font-size: 3vw;
+	line-height: 1.5;
+}
+
+h3{
+	font-size: 2vw;
+	line-height: 3;
+}
+
+
+
+
+
+.icon{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	position: absolute;
+	top: 57%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.icon1,.icon2,.icon3{
+	width: 8%;
+	height: auto;
+	margin: 1%;
+}
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+

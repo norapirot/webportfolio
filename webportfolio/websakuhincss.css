@@ -1,0 +1,735 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+
+
+#loading img {
+	position: fixed;
+	top: 45%;
+	left: 45%;
+	opacity: 0.5;
+	z-index: 9999;
+}
+.hidden {
+	display: none;
+}
+
+
+
+
+
+body{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-color: #161B30;
+}
+
+
+.sakuhin{
+	display: block;
+	background-image: url("gazou/hiki000.jpg");
+	background-color: rgba(255,255,255,0.08);
+	background-blend-mode:lighten;
+	background-repeat: repeat;
+	position: relative;
+	height: 250vw;
+	width: 100vw;
+	min-width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+}
+
+.daimei{
+	position: relative;
+	width: 40vw;
+	height: auto;
+	text-align: center;
+	margin-top: 5vw;
+}
+
+
+
+.nora{
+	position: absolute;
+	width: 25vw;
+	height: 25vw;
+	left: 12%;
+	top: 10vw;
+	border-radius:50%;
+	object-fit: cover;
+	box-shadow: rgba(0, 0, 0, 0.82) 3px 3px 2px, rgba(0, 0, 0, 0.84) 2px 3px 2px, rgba(186, 229, 36, 0.84) -2px -1px 1px;
+	cursor: url('gazou/clicknora.png'), pointer;
+}
+
+
+.agape{
+	position: absolute;
+	width: 25vw;
+	height: 25vw;
+	right: 12%;
+	top: 50vw;
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: rgba(0, 0, 0, 0.82) 3px 3px 1px, rgba(0, 0, 0, 0.84) 2px 3px 1px, rgba(186, 229, 36, 0.84) -2px -1px 1px;
+}
+
+
+.sound{
+	position: absolute;
+	width: 25vw;
+	height: 25vw;
+	left: 12%;
+	top: 90vw;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: 50%;
+	box-shadow: rgba(0, 0, 0, 0.82) 3px 3px 1px, rgba(0, 0, 0, 0.84) 2px 3px 1px, rgba(186, 229, 36, 0.84) -2px -1px 1px;
+	
+}
+
+
+
+
+
+
+
+.imgbox1 {
+	position: relative;
+	z-index: 30;
+	
+}
+.imgbox1 .active {
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+	width: 25vw;
+	height: 25vw;
+	left: 12%;
+	top: 10vw;
+	border-radius: 50%;
+	object-fit: cover;
+	cursor: url('gazou/clicknora.png'), pointer;
+}
+
+.imgbox1:hover .active {
+	opacity: 1;
+}
+
+
+
+.imgbox2 {
+	position: relative;
+	z-index: 30;
+	
+}
+.imgbox2 .active {
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+	width: 25vw;
+	height: 25vw;
+	right: 12%;
+	top: 50vw;
+	border-radius: 50%;
+	object-fit: cover;
+	cursor: url('gazou/clicknora.png'), pointer;
+}
+
+.imgbox2:hover .active {
+	opacity: 1;
+}
+
+
+.imgbox3 {
+	position: relative;
+	z-index: 30;
+}
+.imgbox3 .active {
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+	width: 25vw;
+	height: 25vw;
+	left: 12%;
+	top: 90vw;
+	border-radius:50%;
+	object-fit: cover;
+	object-position: -2% 2%;
+	cursor: url('gazou/clicknora.png'), pointer;
+}
+
+.imgbox3:hover .active {
+	opacity: 1;
+}
+
+
+
+.click1{
+	position: absolute;
+	width: 5%;
+	height: auto;
+	top: 20%;
+	left: 38%;
+}
+
+
+.click2{
+	position: absolute;
+	width: 5%;
+	height: auto;
+	top: 36%;
+	right: 8%;
+}
+
+
+.click3{
+	position: absolute;
+	width: 5%;
+	height: auto;
+	top: 52%;
+	left: 38%;
+}
+
+
+
+
+h1{
+	font-size: 2.5vw;
+	font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+	color: #F0F7EC;
+	text-shadow: 0 0 3px #F0F7EC;
+	line-height: 2.4;
+}
+
+h2{
+	font-size: 1.5vw;
+	font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+	color: #F0F7EC;
+	text-shadow: 0 0 3px #F0F7EC;
+	margin-bottom: 5%;
+}
+
+h3{
+	text-decoration: none;
+	border-bottom: 2px solid #FC6552;
+	text-align: center;
+	width: 44%;
+	top: 30vh;
+	margin-left: auto;
+	margin: auto;
+	font-size: 1vw;
+	font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+	color: #FC6552;
+	text-shadow: 0 0 1px #FC6552;
+}
+
+
+.text1{
+	position: absolute;
+	margin: 0;
+	width: 40vw;
+	text-align: center;
+	top: 30vw;
+	left: 56%;
+}
+
+.text2{
+	position: absolute;
+	margin: 0;
+	width: 40%;
+	text-align: center;
+	top: 80vw;
+	right: 56%;
+}
+
+.text3{
+	position: absolute;
+	margin: 0;
+	width: 40%;
+	text-align: center;
+	top: 122vw;
+	left: 56%;
+}
+
+
+
+
+
+.uchuusen{
+	width: 100%;
+	height: 220vw;
+	
+}
+
+
+.sono1{
+	width: 40%;
+	height: auto;
+	position: -webkit-sticky;
+	position: sticky;
+	margin-top: -13vw;
+	top: 0;
+	margin-left: 25vw;
+	margin-right: 25vw;
+}
+
+.sono2{
+	width: 40%;
+	height: auto;
+	position: -webkit-sticky;
+	position: sticky;
+	margin-top: 15vw;
+	top: 0;
+	margin-left: 25vw;
+	margin-right: 25vw;
+}
+
+.sono3{
+	width: 40%;
+	height: auto;
+	position: -webkit-sticky;
+	position: sticky;
+	margin-top: 20vw;
+	top: 0;
+	margin-left: 25vw;
+	margin-right: 25vw;
+}
+
+
+.hoshi1{
+	position: absolute;
+	top: 180vw;
+	right: 40vw;
+	width: 70vw;
+	height: auto;
+}
+
+.hoshi2{
+	position: absolute;
+	top: 187vw;
+	left: 60vw;
+	width: 30vw;
+	height: auto;
+	
+}
+
+
+.topbutton{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	transform: translateY(-50%) translateX(-50%);
+	top: 220vw;
+	width: 20vw;
+	padding: 0.1%;
+	border-radius: 15% 15% 15% 15%/ 40% 40% 40% 40%;
+	background-color: rgba(2,2,25,0.2);
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+	text-decoration: none;
+	font-size: 1.5vw;
+	font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+	color: #F0F7EC;
+	text-shadow: 0 0 2px #F0F7EC;
+	transition: all 300ms 0s ease;
+	line-height: 2.4;
+}
+
+.topbutton:hover{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	transform: translateY(-50%) translateX(-50%);
+	top: 220vw;
+	width: 20vw;
+	padding: 0.1%;
+	border-radius: 15% 15% 15% 15%/ 40% 40% 40% 40%;
+	background-color: rgba(2,2,25,0.2);
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+	text-decoration: none;
+	font-size: 1.5vw;
+	font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+	color: #B5EF12;
+	text-shadow: 1px 1px 3px #B5EF12;
+	transition: all 300ms 0s ease;
+	line-height: 2.4;
+}
+
+
+
+
+@media (max-width: 760px){
+	
+	
+	
+
+	#loading img {
+		position: fixed;
+		top: 45%;
+		left: 45%;
+		opacity: 0.5;
+		z-index: 9999;
+	}
+	.hidden {
+		display: none;
+	}
+
+
+	
+	
+	.sakuhin{
+		display: inline-block;
+		background-image: url("gazou/hiki000.jpg");
+		background-color: rgba(255,255,255,0.08);
+		background-blend-mode:lighten;
+		background-repeat: repeat;
+		position: relative;
+		height: 630vw;
+		width: 100vw;
+		min-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		object-fit: cover;
+	
+	}
+
+
+	.daimei{
+		position: relative;
+		width: 40vw;
+		height: auto;
+		text-align: center;
+		margin-top: 5vw;
+	}
+
+
+
+	.nora{
+		position: absolute;
+		width: 45vw;
+		height: 45vw;
+		left: 10%;
+		top: 20vw;
+		border-radius:50%;
+		object-fit: cover;
+		box-shadow: rgba(0, 0, 0, 0.82) 3px 3px 2px, rgba(0, 0, 0, 0.84) 2px 3px 2px, rgba(186, 229, 36, 0.84) -2px -1px 1px;
+		cursor: url('gazou/clicknora.png'), pointer;
+	}
+
+
+	.agape{
+		position: absolute;
+		width: 45vw;
+		height: 45vw;
+		right: 10%;
+		top: 120vw;
+		border-radius: 50%;
+		object-fit: cover;
+		box-shadow: rgba(0, 0, 0, 0.82) 3px 3px 1px, rgba(0, 0, 0, 0.84) 2px 3px 1px, rgba(186, 229, 36, 0.84) -2px -1px 1px;
+	}
+
+
+	.sound{
+		position: absolute;
+		width: 45vw;
+		height: 45vw;
+		left: 10%;
+		top: 220vw;
+		border-radius: 50%;
+		object-fit: cover;
+		object-position: 50%;
+		box-shadow: rgba(0, 0, 0, 0.82) 3px 3px 1px, rgba(0, 0, 0, 0.84) 2px 3px 1px, rgba(186, 229, 36, 0.84) -2px -1px 1px;
+	}
+	
+
+
+	.click1{
+		position: absolute;
+		width: 5%;
+		height: auto;
+		top: 13%;
+		left: 50%;
+	}
+
+
+	.click2{
+		position: absolute;
+		width: 5%;
+		height: auto;
+		top: 29%;
+		right: 10%;
+	}
+
+
+	.click3{
+		position: absolute;
+		width: 5%;
+		height: auto;
+		top: 45%;
+		left: 50%;
+	}
+
+	
+	
+	
+	.imgbox1 {
+		position: relative;
+		z-index: 30;
+
+	}
+	.imgbox1 .active {
+		position: absolute;
+		opacity: 0;
+		transition: 0.5s;
+		width: 45vw;
+		height: 45vw;
+		left: 10%;
+		top: 20vw;
+		border-radius: 50%;
+		object-fit: cover;
+		cursor: url('gazou/clicknora.png'), pointer;
+	}
+
+	.imgbox1:hover .active {
+		opacity: 1;
+	}
+
+
+
+	.imgbox2 {
+		position: relative;
+		z-index: 30;
+
+	}
+	.imgbox2 .active {
+		position: absolute;
+		opacity: 0;
+		transition: 0.5s;
+		width: 45vw;
+		height: 45vw;
+		right: 10%;
+		top: 120vw;
+		border-radius: 50%;
+		object-fit: cover;
+		cursor: url('gazou/clicknora.png'), pointer;
+	}
+
+	.imgbox2:hover .active {
+		opacity: 1;
+	}
+
+
+	.imgbox3 {
+		position: relative;
+		z-index: 30;
+	}
+	.imgbox3 .active {
+		position: absolute;
+		opacity: 0;
+		transition: 0.5s;
+		width: 45vw;
+		height: 45vw;
+		left: 10%;
+		top: 220vw;
+		border-radius:50%;
+		object-fit: cover;
+		object-position: -2% 2%;
+		cursor: url('gazou/clicknora.png'), pointer;
+	}
+
+	.imgbox3:hover .active {
+		opacity: 1;
+	}
+
+
+
+	h1{
+		font-size: 3vw;
+		font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+		color: #F0F7EC;
+		text-shadow: 0 0 3px #F0F7EC;
+		line-height: 2.4;
+	}
+
+	h2{
+		font-size: 2vw;
+		font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+		color: #F0F7EC;
+		text-shadow: 0 0 3px #F0F7EC;
+		margin-bottom: 5%;
+	}
+
+	h3{
+		text-decoration: none;
+		border-bottom: 2px solid #FC6552;
+		text-align: center;
+		width: 44%;
+		top: 30vh;
+		margin-left: auto;
+		margin: auto;
+		font-size: 1vw;
+		font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+		color: #FC6552;
+		text-shadow: 0 0 1px #FC6552;
+	}
+
+
+	.text1{
+		position: absolute;
+		margin: 0;
+		width: 35%;
+		text-align: center;
+		top: 30vw;
+		left: 62%;
+	}
+
+	.text2{
+		position: absolute;
+		margin: 0;
+		width: 30%;
+		text-align: center;
+		top: 140vw;
+		right: 62%;
+	}
+
+	.text3{
+		position: absolute;
+		margin: 0;
+		width: 30%;
+		text-align: center;
+		top: 245vw;
+		left: 62%;
+	}
+
+
+
+
+
+	.uchuusen{
+		width: 100%;
+		height: 450vw;
+
+	}
+
+
+	.sono1{
+		width: 40%;
+		height: auto;
+		position: -webkit-sticky;
+		position: sticky;
+		margin-top: -50vw;
+		top: 0;
+		margin-left: 25vw;
+		margin-right: 25vw;
+		padding-top: 20%;
+	}
+
+	.sono2{
+		width: 40%;
+		height: auto;
+		position: -webkit-sticky;
+		position: sticky;
+		margin-top: 130vw;
+		top: 0;
+		margin-left: 25vw;
+		margin-right: 25vw;
+		padding-top: 20%;
+	}
+
+	.sono3{
+		width: 40%;
+		height: auto;
+		position: -webkit-sticky;
+		position: sticky;
+		margin-top: 40vw;
+		top: 0;
+		margin-left: 25vw;
+		margin-right: 25vw;
+		padding-top: 20%;
+	}
+
+
+	.hoshi1{
+		position: absolute;
+		top: 280vw;
+		right: 40vw;
+		width: 70vw;
+		height: auto;
+	}
+
+	.hoshi2{
+		position: absolute;
+		top: 360vw;
+		left: 60vw;
+		width: 30vw;
+		height: auto;
+
+	}
+
+
+	.topbutton{
+		position: absolute;
+		display: inline-block;
+		text-align: center;
+		transform: translateY(-50%) translateX(-50%);
+		top: 450vw;
+		width: 20vw;
+		padding: 0.1%;
+		border-radius: 15% 15% 15% 15%/ 40% 40% 40% 40%;
+		background-color: rgba(2,2,25,0.2);
+		box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+		text-decoration: none;
+		font-size: 1.5vw;
+		font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+		color: #F0F7EC;
+		text-shadow: 0 0 2px #F0F7EC;
+		transition: all 300ms 0s ease;
+		line-height: 2.4;
+	}
+
+	.topbutton:hover{
+		position: absolute;
+		display: inline-block;
+		text-align: center;
+		transform: translateY(-50%) translateX(-50%);
+		top: 450vw;
+		width: 20vw;
+		padding: 0.1%;
+		border-radius: 15% 15% 15% 15%/ 40% 40% 40% 40%;
+		background-color: rgba(2,2,25,0.2);
+		box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+		text-decoration: none;
+		font-size: 1.5vw;
+		font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+		color: #B5EF12;
+		text-shadow: 1px 1px 3px #B5EF12;
+		transition: all 300ms 0s ease;
+		line-height: 2.4;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

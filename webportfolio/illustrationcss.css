@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+
+
+#loading img {
+	position: fixed;
+	top: 45%;
+	left: 45%;
+	opacity: 0.5;
+	z-index: 9999;
+}
+.hidden {
+	display: none;
+}
+
+
+
+
+body{
+	width: 0 auto;
+	height: 80vw;
+	background-image: url("gazou/hiki000.jpg");
+	background-repeat: repeat;
+	text-align: center;
+}
+
+
+
+
+
+
+.topbuttonbody{
+	display: inline-block;
+	height: auto;
+	position: absolute;
+	left: 4%;
+	top: 8%;
+	z-index: 50;
+}
+
+
+
+
+.pworks{
+	font-size: 1.5vh;
+	font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+	color: #F0F7EC;
+	text-shadow: 0 0 2px #F0F7EC;
+	transition: all 300ms 0s ease;
+	
+}
+
+.pworks:hover{
+	font-size: 1.5vh;
+	font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+	color: #B5EF12;
+	text-shadow: 1px 1px 3px #B5EF12;
+	transition: all 300ms 0s ease;
+
+}
+
+
+.topbutton{
+	display: inline-block;
+	text-align: center;
+	width: 15vw;
+	padding: 0.1%;
+	border-radius: 15% 15% 15% 15%/ 40% 40% 40% 40%;
+	background-color: rgba(2,2,25,0.2);
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+	text-decoration: none;
+	position: absolute;
+	
+}
+
+.topbutton:hover{
+	display: inline-block;
+	text-align: center;
+	width: 15vw;
+	padding: 0.1%;
+	border-radius: 15% 15% 15% 15%/ 40% 40% 40% 40%;
+	background-color: rgba(2,2,25,0.2);
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+	text-decoration: none;
+	position: absolute;
+}
+
+
+
+
+.slidermoji{
+	display: inline-block;
+	margin-top: 10%;
+	font-size: 1vh;
+	font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+	color: #F0F7EC;
+}
+
+
+
+
+
+
+
+
+
+
+.illustration{
+	margin-top: 5%;
+	width: 45%;
+	height: auto;
+}
+
+
+
+
+
+
+.i01{
+	margin-top: 25%;
+}
+
+
+.i02{
+	margin-top: 10%;
+}
+
+
+
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+	width: 94%;
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	top: 1%;
+}
+
+
+
+.slider img {
+    width: 45vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+    height: 0 auto;
+}
+
+.slider .slick-slide {
+  transform: scale(0.5);/*左右の画像のサイズを80%に*/
+  transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+  opacity: 0.5;/*透過50%*/
+}
+
+.slider .slick-slide.slick-center{
+	transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+	opacity: 1;/*透過なし*/
+}
+
+
+
+
+
+
+
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 40%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 15px solid #CAF044;/*矢印の色*/
+    border-right: 15px solid #CAF044;/*矢印の色*/
+    height: 30px;
+    width: 30px;
+	z-index: 50;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+  margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background: #FC6552;/*ドットボタンの現在地表示の色*/
+}
+
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+
+h2,p {
+	text-align:center;
+	padding: 2%;
+}
+
+ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	align-items: center;
+}
+
+
+
+
+
+
+
+a{
+  color: #333;
+}
+
+/*
+
+a:hover,
+a:active{
+  text-decoration: none;
+}
+*/
+
+
+@media (max-width: 900px){
+	
+	body{
+		height: 100vh;
+	}
+	
+	
+	.slider {
+		top: 20%;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
